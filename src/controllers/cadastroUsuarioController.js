@@ -4,7 +4,7 @@ class cadastroUsuarioController{
     async cadastro(req, res){
         let cadastro;
         try{
-            cadastro = await cadastraUsuarioService.store(req.body)
+            cadastro = await cadastraUsuarioService.cadastrar(req.body)
             if(cadastro){
                 res.status(cadastro.status).json(cadastro.message)
             }

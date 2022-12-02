@@ -1,5 +1,3 @@
-import Sequelize from 'sequelize';
-
 import databaseConfig from '../database/database.js';
 import Usuario from '../models/user.model.js';
 

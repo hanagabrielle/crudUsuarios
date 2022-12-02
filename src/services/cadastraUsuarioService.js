@@ -1,7 +1,7 @@
 import Users from "../models/user.model.js"
 
 class cadastraUsuarioService{
-    async store(params) {
+    async cadastrar(params) {
         let objetoRetorno;
         try{
             const {usuario_nome, password, usuario_email, usuario_tipo, usuario_telefone} = params;

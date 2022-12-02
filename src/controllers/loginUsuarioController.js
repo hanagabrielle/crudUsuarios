@@ -4,7 +4,7 @@ class loginController {
   async login(req, res) {
       let usuarioLogin;
       try{
-          usuarioLogin = await loginUsuarioService.store(req.body)
+          usuarioLogin = await loginUsuarioService.logar(req.body)
           if(usuarioLogin){
               res.status(usuarioLogin.status).json(usuarioLogin.message)
           }

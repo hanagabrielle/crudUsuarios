@@ -4,7 +4,7 @@ class buscaUsuarioController{
     async busca(req, res){
         let buscaUsuario;
         try{
-            buscaUsuario = await buscaUsuarioService.store(req.params)
+            buscaUsuario = await buscaUsuarioService.buscar(req.params)
             if(buscaUsuario){
                 res.status(buscaUsuario.status).json(buscaUsuario.message)
             }

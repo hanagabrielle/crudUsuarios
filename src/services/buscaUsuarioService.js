@@ -1,7 +1,7 @@
 import Users from "../models/user.model.js"
 
 class buscaUsuarioService{
-    async store(params) {
+    async buscar(params) {
         let objetoRetorno;
         try{
             const {usuario_id} = params;

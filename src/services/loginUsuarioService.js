@@ -3,7 +3,7 @@ import authConfig from '../config/configAuthJWT.js';
 import Users from '../models/user.model.js';
 
 class loginUsuarioService {
-    async store(params) {
+    async logar(params) {
         const { usuario_email = null, password = null } = params;
         let objetoRetorno;
         try{
