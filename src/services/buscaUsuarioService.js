@@ -6,11 +6,11 @@ class buscaUsuarioService{
         try{
             const {usuario_id} = params;
 
-            const userExist = await Users.findOne({where: {usuario_id}});
+            const buscaUsuario = await Users.findOne({where: {usuario_id}});
 
             objetoRetorno = {
                 status: 200,
-                message: userExist
+                message: buscaUsuario
             }
     
             return objetoRetorno;

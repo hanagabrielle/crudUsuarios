@@ -1,7 +1,7 @@
 import { Router } from "express";
 import middleware from "../middlewares/auth.js"
-import cadastroController from "../controllers/cadastroController.js"
-import loginController from "../controllers/loginController.js";
+import cadastroController from "../controllers/cadastroUsuarioController.js"
+import loginController from "../controllers/loginUsuarioController.js";
 import buscaUsuarioController from "../controllers/buscaUsuarioController.js";
 
 const roteador = new Router()

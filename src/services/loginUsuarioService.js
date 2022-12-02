@@ -12,8 +12,6 @@ class loginUsuarioService {
                 where: { usuario_email }
             });
 
-            console.log('Achei usuario?', user)
-
             if (!(await user.checkPassword(password))) {
                 objetoRetorno = {
                     status: 401,
