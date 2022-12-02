@@ -25,10 +25,10 @@ npm run start
 
 # Exemplo de .env esperado
 
-DB_HOST=localhost
-DB_USER=postgres
-DB_PASS=1234
-DB_NAME=postgres
-DB_PORT=5432
-PORT_SERVIDOR=3000
-DB_DIALECT='postgres'
+- DB_HOST=localhost
+- DB_USER=postgres
+- DB_PASS=1234
+- DB_NAME=postgres
+- DB_PORT=5432
+- PORT_SERVIDOR=3000
+- DB_DIALECT='postgres'
